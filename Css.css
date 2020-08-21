@@ -1,0 +1,259 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+	background-image: url('Pictures/background.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;  
+	background-size: cover;
+	font-family: "Lucida Console", Courier, monospace
+}
+
+h1 {
+	color: white;
+	margin-left: 20px;
+}
+
+.toolbar{
+	background-color: #6E7DAB;
+	text-align: left;
+	padding: 5px;
+    top: 43px;
+	right: 0px;
+	margin-left: 0px;
+	position: fixed;
+	
+}
+
+.button{
+	background-color: #6E7DAB;
+	border: none;
+	color: #D1E3DD;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	transition: all 0.5s;
+  }
+  
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}  
+
+#videu:hover {
+    opacity: 0.2; 
+    filter: alpha(opacity=100);
+	transition: .3s ease;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 50%;
+  left: 0;
+  right: 0;
+  background-color:  rgba(0,0,0,0.6);
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.mainsection:hover .overlay {
+  bottom: 100;
+  height: 10%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  
+}
+
+
+.mainsection{
+	background-color: black;
+	text-align: center;
+	width: 1200px;
+	height: 650px;
+	margin-top: -45px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+	padding: 0;
+}
+
+.test{
+	background-color: #575366;
+	text-align: center;
+	width: 1200px;
+	height: 650px;
+	border: 3px black;
+	margin: auto;
+	padding: 0;
+}
+
+.refs{
+	background-color: #575366;
+	text-align: center;
+	width: 1200px;
+	height: 230px;
+	border: 3px black;
+	margin: auto;
+	padding: 0;
+}
+
+.welcome{
+	background-color: #3D316B;
+	text-align: center;
+	width: 100%;
+	height: 50px;
+	margin-top: -45px;
+	margin-left: 0;
+	margin-right: auto;
+	margin-bottom: auto;
+	padding: 0;
+}
+
+.picture{
+	background-color: #575366;
+	text-align: center;
+	width: 300px;
+	height: 300px;
+	margin-top: auto;
+	margin-left: 0;
+	margin-right: auto;
+	margin-bottom: auto;
+	padding: 0;
+}
+
+.intro{
+	background-color: #575366*;
+	text-align: center;
+	width: 820px;
+	height: 600px;
+	margin-top: -300px;
+	margin-left: auto;
+	margin-right: 50px;
+	margin-bottom: auto;
+	padding: 0;
+}
+
+.works{
+	background-color: #542B4B;
+	text-align: center;
+	width: 1200px;
+	height: 5000px;
+	border: 3px black;
+	margin: auto;
+	padding: 0;
+}
+
+.welcometoworks{
+	background-color: #3D316B;
+	text-align: center;
+	width: 100%;
+	height: 50px;
+	margin-top: -40px;
+	margin-left: 0;
+	margin-right: auto;
+	margin-bottom: auto;
+	padding: 0;
+}
+
+.column {
+	background-color: #3D316B;
+	border: 5px solid white;
+	text-align: center;
+	width: 300px;
+	height: 300px;
+	padding: 0px;
+	float: left;
+	width: 25%;
+	padding: 10px;
+}
+
+.column {
+  padding: 10px;
+  background-color: #9E8ED4;
+  transition: transform .2s;
+  width: 200px;
+  height: 200px;
+  margin-left:50px;
+  margin-right:50px;
+  margin-top:50px;
+  margin-bottom:50px;
+}
+
+.column:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+
+.desc{
+	color: white;
+	font-size: 20px;
+	font-family: "Lucida Console", Courier, monospace
+}
+
+#grad{
+	max-height: 150%;
+	max-width: 150%;
+	object-fit: contain;
+    display: block;
+    }
+	
+img{
+	max-height: 100%;
+	max-width: 100%;
+	object-fit: fill;
+    display: cover;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 50px;
+   background-color: rgba(0,0,0,0.6);
+   color: white;
+   text-align: center;
+   opacity: 1;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
